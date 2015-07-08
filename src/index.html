@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Angular2 playground</title>
+    <title>Angular2 - Book</title>
 </head>
 
 <body>
-    <hello>Loading...</hello>
+	<demo-app></demo-app>
+    <!--
+    <li *for="#item of items">
+		<my-dir [property]="item.title">
+			<span (click)="item.action()">{{item.description}}</span>
+		</my-dir>
+	</li>
+    -->
 </body>
 
 <!-- ES6-related imports -->
@@ -23,9 +30,35 @@
 </script>
 <script src="lib/angular2.js"></script>
 
+<style>
+	body{
+		font-family: verdana;
+		font-size: 12px;
+		color: black;
+	}
+	progress-bar .all{
+		width: 600px;
+		height: 2em;
+		background-color: beige;
+		border: 1px solid black;
+	}
+	progress-bar .progress{
+		float: left;
+		width: 50%;
+		height: 2em;
+		background-color: green;
+		border-right: 1px solid black;
+	}
+	progress-bar .label{
+		display: inline-block;
+		height: 2em;
+		line-height: 2em;
+		color: black;
+	}
+</style>
 <script>
     //bootstrap the Angular2 application
-    System.import('hello').catch(console.log.bind(console));
+    System.import('demo-app').catch(console.log.bind(console));
 </script>
 
 </html>
