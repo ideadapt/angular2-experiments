@@ -8,7 +8,7 @@ import {ProgressBar} from 'progress-bar';
     directives: [ProgressBar, formDirectives],
     template: `
         <form>
-            <input type="text" [(ng-model)]="percentageVal" />
+            <input [(ng-model)]="percentageVal" />
         </form>
 
         <progress-bar [percentage]="percentageVal">Loading...</progress-bar>
