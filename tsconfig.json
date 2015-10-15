@@ -1,0 +1,28 @@
+{
+				"compilerOptions": {
+								"target": "es5",
+								"module": "commonjs",
+								"declaration": false,
+								"noImplicitAny": false,
+								"removeComments": true,
+								"noLib": false,
+								"emitDecoratorMetadata": true,
+								"experimentalDecorators": true,
+								"outDir": "dist"
+				},
+				"filesGlob": [
+								"./**/*.ts",
+								"!./node_modules/**/*.ts"
+				],
+				"files": [
+								"src/app.ts",
+								"src/demo-app.ts",
+								"src/pr-list.ts",
+								"src/progress-bar.ts",
+								"src/time-range-filter.ts",
+								"src/typings/app.d.ts",
+								"src/user-stat-service.ts",
+								"src/user-stats.ts"
+				],
+				"exclude": []
+}

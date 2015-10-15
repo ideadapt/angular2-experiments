@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stashy</title>
+</head>
+
+<body>
+    <app>Loading...</app>
+</body>
+
+<!-- ES6-related imports -->
+<script src="/node_modules/systemjs/dist/system-csp-production.js"></script>
+
+<script>
+    //configure system loader
+    System.config({defaultJSExtensions: true});
+</script>
+<script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+<script src="/node_modules/angular2/bundles/http.dev.js"></script>
+
+<script>
+    //bootstrap the Angular2 application
+    System.import('dist/app').catch(console.log.bind(console));
+</script>
+
+
+<style>
+	body{
+		font-family: verdana;
+		font-size: 12px;
+		color: black;
+	}
+</style>
+
+</html>

@@ -1,11 +1,12 @@
-import {ComponentAnnotation as Component, ViewAnnotation as View, bootstrap, formDirectives} from 'angular2/angular2';
-import {ProgressBar} from 'progress-bar';
+/// <reference path="./typings/app.d.ts" />
+import {Component, View, ElementRef, bootstrap, FORM_DIRECTIVES} from 'angular2/angular2';
+import {ProgressBar} from './progress-bar';
 
 @Component({
     selector: 'demo-app'
 })
 @View({
-    directives: [ProgressBar, formDirectives],
+    directives: [ProgressBar, FORM_DIRECTIVES],
     template: `
         <form>
             <input [(ng-model)]="percentageVal" />
@@ -15,7 +16,7 @@ import {ProgressBar} from 'progress-bar';
     `
 })
 export class DemoApp {
-    percentageVal: number = 20;
+    percentageVal: number = 29;
 }
 
 bootstrap(DemoApp);
