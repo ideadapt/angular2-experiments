@@ -22,7 +22,8 @@ export class UserStatService {
   }
 
   getStats(){
-    return this.http.request('api/com').subscribe((res: any)=> {console.log(res);});
+    //return this.http.request('api/com').subscribe((res: any)=> {console.log(res);});
+    return this.data;
   }
 }
 
