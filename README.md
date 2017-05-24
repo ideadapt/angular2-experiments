@@ -1,5 +1,7 @@
 # ng2-play.ts
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ideadapt/angular2-experiments.svg)](https://greenkeeper.io/)
+
 A minimal [Angular2](https://angular.io/) playground using [TypeScript](http://www.typescriptlang.org/) and [SystemJS loader](https://github.com/systemjs/systemjs)
 
 ## Install
